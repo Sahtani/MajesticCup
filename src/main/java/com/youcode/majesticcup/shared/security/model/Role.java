@@ -1,4 +1,7 @@
 package com.youcode.majesticcup.shared.security.model;
 
-public class Role {
+public enum Role {
+    ADMIN,
+    OPERATOR,
+    USER
 }

@@ -1,5 +1,6 @@
 package com.youcode.majesticcup.shared.security.dto;
 
+import com.youcode.majesticcup.shared.security.model.Role;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
@@ -21,5 +22,5 @@ public record CreateUserDto(@NotBlank(message = "Username is required")
                                     regexp = "^(ADMIN|OPERATOR|USER)$",
                                     message = "Role must be ADMIN, OPERATOR, or USER"
                             )
-                            String role) {
+                            Role role) {
 }
